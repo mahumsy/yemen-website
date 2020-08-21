@@ -1,0 +1,306 @@
+/* 
+
+This CSS file is contains the CSS rule sets for 
+    - index.html
+    - any universal elements that all pages use
+
+The CSS for the take-action.html is in take-action.css
+
+*/
+
+/************************************************/
+/************* UNIVERSAL ELEMENTS ***************/
+/************************************************/
+
+/* TODO: Customize your font properties and background color for all elements inside the <body> and <html> tags */
+body,
+html {
+  height: 100%;
+  font-size: 20px; /* Change the font size*/
+  font-family: "Notable", sans-serif; /* Change the font */
+  line-height: 1.5em; /* Change the line height size*/
+  margin: 0em;
+  color: white; /* Change the font color*/
+  background-color: #9c91aa; /* Change the background color */
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+  /*TODO: Change the font-family property to your linked font*/
+  font-family: "Sriracha", cursive;
+  color: #7474B4;
+  text-align: center;
+}
+
+/*TODO: Change the font-family property to your linked font*/
+h2 {
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-family: "Roboto Mono", sans-serif;
+  color: #7474B4;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+/*TODO: Change the color of a link when a person hovers over it*/
+p a {
+  color: #43d6b9ff;
+  text-decoration: none;
+}
+
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/
+
+/* All of these TODOs are optional. You should change the styling based on your mockup */
+
+/* TODO (optional): Change the background color and/or border style */
+
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0b032d;
+  border-style: solid;
+  border-color: purple;
+}
+
+/* TODO (optional): Change the font size*/
+
+li.nav {
+  /* Styling for the <li class="nav"> element */
+  float: right;
+  font-size: 15px;
+}
+
+/* TODO (optional): Change the font color, decoration, and/or case */
+
+li.nav a {
+  /* Styling for the <a> elements in <li class="nav"> */
+  display: block;
+  color: #843b62;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+/* TODO (optional): Change the background color and/or font color when the mouse hovers over an item */
+
+li.nav a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: #843b62;
+  color: #0b032d;
+}
+
+/************************************************/
+/*********** CSS FOR FLEXBOX HEADING ************/
+/************************************************/
+
+/* TODO: Review the CSS properties to the flexbox container for title and intro text */
+.flex-container {
+  display: flex; /* Set the flexbox display */
+  flex-direction: row; /* Configure the flex items to row */
+  flex-wrap: nowrap; /* Don’t wrap the flex items */
+  justify-content: center; /* Justify the flex items to the center */
+  align-items: center; /* Align the flex items to the center */
+
+  /* Design properties */
+  background-color: #843b62;
+  padding: 5px;
+  border-style: solid;
+  border-color: #621940;
+  border-width: 15px;
+  /* Positioning properties */
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 40%; /* Change this value to move the box up or down */
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+
+}
+
+/* TODO: Review the CSS properties to the flex item for the heading (the left box) */
+.heading-home {
+  padding: 2%;
+  color: #0b032d;
+  font-size: 50px;
+  font-family: "Notable", sans-serif;
+  letter-spacing: 5px;
+  line-height: 70px;
+  text-align: center;
+  
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  padding-right: 10px;
+}
+
+/* TODO: Review the CSS properties to the flex item for the intro text (the right box) */
+.intro-text {
+  background-color: #621940; /* Add your own background color */
+  padding: 4%;
+  margin: 3%;
+  color: #0b032d; /* Add the color of your font */
+  font-size: 29px; /* Add your font size*/
+  font-family: "Sriracha", cursive;
+  letter-spacing: 2px; /* Adds space between letters */
+  line-height: 1.4em; /* Adds space between lines */
+  text-align: center;
+  font-weight: bold;
+  
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/************************************************/
+/*************** PARALLAX SCROLL ****************/
+/************************************************/
+
+/*-----------TEXT SECTIONS-----------*/
+
+/* TODO (optional): Change the background color and/or text alignment */
+
+.text-section,
+.second-text-section {
+  background-color: #621940;
+  padding: 20px 45px;
+  
+  text-align: center;
+  font-family: "Sriracha", cursive;
+
+}
+
+.header,
+.second-header {
+  color:white;
+  font-size: 40px;
+  font-family: 'Holtwood One SC', serif;
+}
+
+.below-first-header,
+.below-second-header {
+  color: #945464;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+
+/* TODO: Add the CSS selector for each image to the collective image rule set */
+
+.main-message,
+.image-one,
+.image-two {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #43d6b9ff;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+
+  /* TODO: Add the property to create the parallax scrolling effect here */
+  background-attachment: fixed;
+}
+
+
+
+/* TODO: Replace the current image URL with your own. This is the top image on your homepage. */
+.main-message {
+  background-image: url("https://cdn.glitch.com/88bb4b52-32ce-4889-81f3-5733edbbea03%2Fyemen2.jpg?v=1592948448980");
+}
+
+/* TODO: Replace the current image URL with your own */
+.image-one {
+  background-image: url("https://cdn.glitch.com/88bb4b52-32ce-4889-81f3-5733edbbea03%2Fyemen3.jpg?v=1592956867398");
+}
+
+/* TODO: Add a second background image. Make sure you add this class selector to the collective image rule set above */
+.image-two {
+  background-image: url("https://cdn.glitch.com/88bb4b52-32ce-4889-81f3-5733edbbea03%2Fchart(f).JPG?v=1593041122529");
+}
+/* TODO: Add more background images by repeating the process above */
+
+/*-----------IMAGE ATTRIBUTIONS (if required)-----------*/
+.attributions {
+  font-family: "Sriracha", cursive;
+  color: white;
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+  
+
+}
+
+/******************************************************/
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+/******************************************************/
+
+/* TODO: Add a breakpoint if the screen is 700px or less */
+@media screen and (max-width: 700px) {
+  .flex-container {
+    flex-wrap: wrap;
+    top: 20%
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* IF THE SCREEN IS ~~701 OR MORE~~ IMPLEMENT THESE RULES */
+
+@media only screen and (min-width: 701px) {
+  
+  .flex-container-action {
+    flex-wrap: wrap;
+  }
+
+  .left-container {
+    width: 50%;
+    margin-right: 10%;
+  }
+}
+
+/* IF THE SCREEN IS ~~1000 OR MORE~~ IMPLEMENT THESE RULES */
+@media only screen and (min-width: 1000px) {
+
+  .flex-container-action {
+    flex-wrap: nowrap;
+  }
+}
+
+/* IF THE SCREEN IS ~~1250 OR MORE~~ IMPLEMENT THESE RULES */
+@media only screen and (min-width: 1250px) {
+  
+  .flex-container-action,
+  .text-section {
+    flex-wrap: nowrap;
+  }
+
+  #list-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 20px 40px 40px;
+  }
+
+  .left-container {
+    width: 50%;
+    margin-right: 10%;
+  }
+}
+
+/* TODO: Add additional breakpoints based on your website's design */
+
